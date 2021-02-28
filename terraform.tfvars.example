@@ -1,15 +1,18 @@
 #Variables to pass to Terraform
 
+#Specify your environment. Take note that you need to deploy this repo to all the regions you want to monitor
 region     = "<your_region>"
 account_id = "<your_accountid>"
 
+#Specify name of the Event Bus and Clouwatch Rule in your region
 eventbus_name = "<name_of_the_event_bus>"
 cwrule_name   = "<name_of_the_cloudwatch_rule>"
 
+#Specify your function's parameters in your region
 lambda_role_name   = "<name_of_lambda_role>"
 lambda_policy_name = "<name_of_lambda_policy>"
 function_name      = "<name_of_lambda_function>"
 
-
+#Specify the SNS topic and your email to send notifications
 topic_name = "<name_of_sns_topic>"
 email      = "<your_email>"
