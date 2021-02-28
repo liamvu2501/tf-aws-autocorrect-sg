@@ -1,1 +1,1 @@
-# tf-aws-autocorrect-sg
+# Terraform repo for Autocorrect Security Group
