@@ -1,0 +1,15 @@
+#Variables to pass to Terraform
+
+region     = "<your_region>"
+account_id = "<your_accountid>"
+
+eventbus_name = "<name_of_the_event_bus>"
+cwrule_name   = "<name_of_the_cloudwatch_rule>"
+
+lambda_role_name   = "<name_of_lambda_role>"
+lambda_policy_name = "<name_of_lambda_policy>"
+function_name      = "<name_of_lambda_function>"
+
+
+topic_name = "<name_of_sns_topic>"
+email      = "<your_email>"
