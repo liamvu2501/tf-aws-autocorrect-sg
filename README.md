@@ -30,7 +30,7 @@ git clone https://github.com/liamvu2501/tf-aws-autocorrect-sg.git
 
 3. This repo will use your awscli "default" profile. If you want to change it, please open **provider.tf** and modify `profile = "default"` to `profile = "yourprofile"`. Make sure to use the profile that has appropriate permissions to create the environment
 
-You can also change the region to deploy this repo. Open **provider.tf** and modify `region  = "us-east-2"` to `region  = "yourregion"` . Make sure to match the `region` specify in **provider.tf** with the `region` in your **terraform.tfvars**
+You can also change the region to deploy this repo. Open **provider.tf** and modify `region  = "us-east-2"` to `region  = "yourregion"` . Make sure to match the `region` in **provider.tf** with the `region` in your **terraform.tfvars**
 
 
 3. At the root of the repo/folder, init your environment:
