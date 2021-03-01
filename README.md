@@ -6,7 +6,7 @@ This repo contains Terraform modules and scripts that help you to monitor and re
 
 1. Cloudtrail is enabled in your environment.
 2. Install Terraform. Refer to https://www.terraform.io/downloads.html
-3. awscli is configured in your environment. Terraform will use your awscli credentials to create the environment. You can change the AWS profile in instructions below.
+3. awscli is configured in your environment. Terraform will use your awscli credentials to create the environment.
 4. The repo will not work for cross-region. You need to deploy this repo to all regions that you want to monitor. 
 
 
