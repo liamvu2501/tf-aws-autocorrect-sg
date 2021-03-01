@@ -5,14 +5,14 @@ This repo contains Terraform modules and scripts that help you to monitor and re
 ## Prerequisites
 
 1. Cloudtrail is enabled in your environment.
-2. Install Terraform. Refer to https://www.terraform.io/downloads.html
+2. Install Terraform. Refer to [here](https://www.terraform.io/downloads.html)
 3. awscli is configured in your environment. Terraform will use your awscli credentials to create the environment.
 4. The repo will not work for cross-region. You need to deploy this repo to all regions that you want to monitor. 
 
 
 ## Architecture
 
-A serverless architecture with AWS Cloud Trail, EventBridge, Lambda and SNS will be used.
+A serverless architecture with AWS CloudTrail, EventBridge, Lambda and SNS will be used.
 
 <img src="https://github.com/liamvu2501/tf-aws-autocorrect-sg/blob/main/Architecture_Diagram.PNG" width="600" height="400" />
 
@@ -25,12 +25,12 @@ A serverless architecture with AWS Cloud Trail, EventBridge, Lambda and SNS will
 git clone https://github.com/liamvu2501/tf-aws-autocorrect-sg.git
 ```
 
-2. Create a **terraform.tfvars** file in the same directory of the **main.tf** and fill in your info. Refer to **terraform.tfvars.example** in the repo as an example
+2. Create a **terraform.tfvars** file in the same directory of the **main.tf** and fill in your info. Refer to **terraform.tfvars.example** in this repo as an example
 
 
-3. This repo will use your awscli "default" profile. If you want to change it, please open **provider.tf** and modify `profile = "default"` to `profile = "yourprofile"`. You can also change the `region`.
+3. This repo will use your awscli "default" profile. If you want to change it, please open **provider.tf** and modify `profile = "default"` to `profile = "yourprofile"`. Make sure to use the profile that has appropriate permissions to create the environment
 
-<u> Take note </u>: Make sure to match the `region` in **provider.tf** and `region` in your **terraform.tfvars**
+You can also change the region to deploy this repo. Open **provider.tf** and modify `region  = "us-east-2"` to `region  = "yourregion"` . Make sure to match the `region` specify in **provider.tf** with the `region` in your **terraform.tfvars**
 
 
 3. At the root of the repo/folder, init your environment:
