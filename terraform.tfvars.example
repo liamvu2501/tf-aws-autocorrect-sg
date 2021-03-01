@@ -1,7 +1,7 @@
 #Variables to pass to Terraform
 
 #Specify your environment. Take note that you need to deploy this repo to all the regions you want to monitor
-region     = "<your_region>"
+region     = "<your_region>" #Make sure to match with the region you specify in the provider.tf
 account_id = "<your_accountid>"
 
 #Specify name of the Event Bus and Clouwatch Rule in your region
