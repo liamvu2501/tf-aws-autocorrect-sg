@@ -54,7 +54,7 @@ terraform apply -auto-approve
 
 ## Disclaimer
 
-All writers's opinions are their own. Please contact AWS and Hashicorp if you need official supports for any services. Feel free to clone the repo, modify it and create pull requests if necessary.
+Opinions are those of the individual author. This post is not affiliated with, nor endorsed by, any of the companies mentioned. All trademarks and other intellectual property used or displayed are property of their respective owners
 
 
 
